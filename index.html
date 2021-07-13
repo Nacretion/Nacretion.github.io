@@ -1,12 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="static/styles/index.css">
+    <link rel="shortcut icon" href="static/img/icon.png" type="image/x-icon">
+
+    <script src="static/js/jquery-3.6.0.js"></script>
+
     <title>Document</title>
 </head>
+
 <body>
-    <a href="rim-and-ck/index.html">Рим + ЦК</a>
+
+    <div class="text" id="left">
+        <span>•</span>
+        <p>welcome to my portfolio</p>
+        <span>•</span>
+    </div>
+
+    <div class="content">
+        <p id="prof">WEB-DEVELOPER</p>
+        <p id="nickname">NACRETION</p>
+        <a href="https://VK.COM/NACRETION">VK.COM/NACRETION</a>
+        <a href="https://www.INSTAGRAM.COM/NACRETION">INSTAGRAM.COM/NACRETION</a>
+        <input type="button" value="MY PROJECTS" onclick="changeState()">
+    </div>
+
+    <div class="text" id="right">
+        <span>•</span>
+        <p>welcome to my portfolio</p>
+        <span>•</span>
+    </div>
+
+    <div class="menu">
+        <div class="column" id="left">
+            <a href="projects/rim-and-ck/index.html">Рим + ЦК</a>
+            <a href="projects/snake/index.html">Змейка</a>
+
+        </div>
+        <div class="column" id="right">
+            <p class="heading"></p>
+            <p class="subheading"></p>
+        </div>
+
+
+
+        <input type="button" onclick="changeState()">
+    </div>
+
+    <script>
+        // $(".menu").hide();
+        let isShown = false;
+
+        function changeState() {
+            if (!isShown) {
+
+
+                $(".menu").fadeIn();
+                isShown = true;
+            }
+            else {
+                $(".menu").fadeOut();
+                isShown = false;
+            }
+
+        }
+    </script>
 </body>
+
 </html>

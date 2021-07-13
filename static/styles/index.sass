@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap')
+
+html
+    margin: 0
+    padding: 0
+    
+    height: 100vh
+
+body
+    margin: 0
+    padding: 0
+
+    height: 100vh
+    display: flex
+    justify-content: space-between
+    background-color: 
+    background-image: 
+
+    background: linear-gradient( rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url('../img/Background.png') no-repeat
+    background-size: cover
+    background-position: center
+
+
+.text
+
+    height: 100vh
+    display: flex
+    justify-content: space-between
+    align-items: center
+    text-align: center
+
+
+    text-transform: uppercase
+    letter-spacing: .4vw
+    font-family: 'Bebas Neue', cursive
+    writing-mode: vertical-lr
+
+
+    p
+        font-size: calc(.7vh + .7vw)
+        margin: 0
+
+    span
+        padding: 3vh 0
+        font-size: calc(2.5vh + 2.5vw)
+        margin: 0
+
+#left
+    p
+        transform: rotate(180deg)
+
+.content
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+
+    a,button,p
+        text-align: center
+        margin-top: 0
+
+    #prof
+        font-size: calc(1.2vh + 1.2vw)
+        font-family: 'Bebas Neue', cursive
+        letter-spacing: .7vw
+        margin-bottom: 0
+        
+    #nickname
+        margin-bottom: 2vh
+        font-family: 'Poppins', sans-serif
+        font-size: calc(1vh + 7vw)
+        letter-spacing: 1vw
+
+    a
+        font-family: 'Bebas Neue', cursive
+        letter-spacing: .5vw
+        color: #737373
+        text-decoration: none
+        font-size: calc(1vh + 1vw)
+        margin-bottom: 1vh
+        outline: none
+
+    input
+        cursor: pointer
+        letter-spacing: .7vw
+        font-family: 'Bebas Neue', cursive
+        margin-top: 5vh
+        background: none
+        border: .2vw solid black
+        font-size: calc(1.5vh + 1.5vw)
+        padding: 2vh 3vw
+        border-radius: 5vw
+        &:hover
+            background-color: #ffffff50
+.menu
+    z-index: 998
+    position: absolute
+    top: 0
+    left: 0
+
+    height: 100vh
+    width: 100vw
+
+    background-color: #ffffffaa
+
+    display: flex
+    
+    .column
+        display: flex
+        flex-direction: column
+        width: 50vw
+        
+        padding-top: 10vh
+
+        a
+            margin-top: 1vh
+            text-decoration: none
+            outline: none
+            color: #000
+            font-size: calc(1vh + 1vw)
+            font-family: 'Bebas Neue', cursive
+
+            &:hover
+                margin-left: 1vw
+
+
+    #left
+        padding-left: 10vw
+
+    #right
+        padding-right: 10vw
+
+    input
+        position: absolute
+        cursor: pointer
+        z-index: 999
+        top: 5vh
+        right: 5vw
+
+        height: 5vh
+        width: 5vh
+
+        background: none
+
+        background-image: url('../img/close.png')
+        background-position: center
+        background-size: cover
+        border: none
