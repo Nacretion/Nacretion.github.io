@@ -1,0 +1,221 @@
+@font-face {
+  font-family: "europe";
+  src: url("../fonts/europe.otf") format("OpenType");
+}
+
+body {
+  padding: 0;
+  margin: 0 1vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.heading {
+  font-size: calc( 1.7vh + 1.7vw);
+  margin-left: 7vw;
+  margin-top: 2vh;
+  font-family: 'Arial', sans-serif;
+  color: #eb5017;
+  font-weight: 400;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+header .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: calc(.9vh + .9vw);
+  font-family: 'europe', sans-serif;
+  color: #eb5017;
+  margin-bottom: 2vh;
+}
+
+header .logo p {
+  margin-right: .5vw;
+}
+
+header .menu {
+  display: table;
+  width: 100%;
+  background-color: #eb5017;
+  height: 7vh;
+  border-collapse: separate;
+  border-spacing: .1vw 0;
+}
+
+header .menu .link {
+  cursor: pointer;
+  background-color: #000;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "Arial", sans-serif;
+  font-size: calc(.7vh + .7vw);
+}
+
+header .menu .link:hover {
+  background-color: #eb5017;
+}
+
+header .menu .link a {
+  text-decoration: none;
+  color: #fff;
+}
+
+header .menu .active-link {
+  background-color: #eb5017;
+}
+
+.main {
+  padding: 0 4vw;
+}
+
+.main .breadcrumb {
+  padding: 0;
+  font-size: calc( .8vh + .8vw);
+}
+
+.main .breadcrumb li {
+  display: inline;
+  list-style: none;
+}
+
+.main .breadcrumb a {
+  color: #000;
+}
+
+.main .breadcrumb li + li:before {
+  content: "- ";
+}
+
+.main .calc {
+  width: 60vw;
+  height: 50vh;
+  background-color: #f2f2f2;
+  overflow: auto;
+}
+
+.main .calc .calc-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 2vw;
+}
+
+.main .calc .calc-content .calc-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 4vh;
+  margin-bottom: 1vh;
+  font-size: calc( .7vh + .7vw);
+}
+
+.main .calc .calc-content .calc-row .input {
+  height: 2.5vh;
+  font-size: calc( .65vh + .65vw);
+  margin-left: 2vw;
+  width: 16%;
+}
+
+.main .calc .calc-content .calc-row p {
+  font-family: "Arial", sans-serif;
+  text-align: right;
+  width: 25%;
+}
+
+.main .calc .calc-content .calc-row label {
+  margin-left: .5vw;
+}
+
+.main .calc .calc-content .calc-row input[name="isToUp"] {
+  width: 2%;
+}
+
+.main .calc .calc-content .calc-row #slider1, .main .calc .calc-content .calc-row #slider2 {
+  width: 40%;
+  margin-left: 3vw;
+}
+
+button {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-top: 4vh;
+  font-size: calc(.7vh + .7vw);
+  background: -webkit-gradient(linear, left top, left bottom, from(#bff535), to(#7ec600));
+  background: linear-gradient(#bff535, #7ec600);
+  width: 16%;
+  border-radius: 1vh;
+  height: 5vh;
+  border: 1px solid #a9ff00;
+  -webkit-box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 9px rgba(0, 0, 0, 0.4);
+  font-family: "Arial";
+  font-weight: bold;
+}
+
+#slider1 .ui-slider-range {
+  background: #ef2929;
+}
+
+footer {
+  background-color: #000;
+  height: 10vh;
+  width: 100%;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+.links {
+  padding-left: 6vw;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.links li {
+  text-align: center;
+  font-size: calc( .75vh + .75vw);
+  font-family: "Arial", sans-serif;
+}
+
+.links li a {
+  color: #fff;
+}
+
+.links li + li {
+  margin-left: 1.5vw;
+}
+
+#ui-datepicker-div {
+  z-index: 999 !important;
+}
+/*# sourceMappingURL=index.css.map */
