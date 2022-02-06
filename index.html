@@ -50,7 +50,9 @@
     <script>
         let menu = $(".menu")
         let isShown = false;
-
+        menu.click(() => {
+            changeState()
+        })
         function changeState() {
             if (!isShown) {
 
