@@ -16,37 +16,31 @@
 
 <body>
 
-    <div class="text" id="left">
+    <div class="text left">
         <span>•</span>
         <p>welcome to my portfolio</p>
         <span>•</span>
     </div>
 
     <div class="content">
-        <p id="prof">almost WEB-DEVELOPER</p>
-        <p id="nickname">NACRETION</p>
-        <a href="https://VK.COM/NACRETION">VK.COM/NACRETION</a>
-        <a href="https://www.INSTAGRAM.COM/NACRETION">INSTAGRAM.COM/NACRETION</a>
-        <input type="button" value="MY PROJECTS" onclick="changeState()">
+        <p class="uppercase" id="prof">web-developer</p>
+        <p class="uppercase" id="nickname">Nacretion</p>
+        <a class="uppercase" href="https://vk.com/Nacretion">vk.com</a>
+        <a class="uppercase" href="https://www.instagram.com/Nacretion">instagram.com</a>
+        <a class="uppercase" href="https://t.me/nacretion">telegram.org</a>
+        <input class="uppercase" type="button" value="my projects" onclick="changeState()">
     </div>
 
-    <div class="text" id="right">
+    <div class="text right">
         <span>•</span>
         <p>welcome to my portfolio</p>
         <span>•</span>
     </div>
 
     <div class="menu">
-        <div class="column" id="left">
-            <a href="projects/rim-and-ck">Рим + ЦК</a>
-            <a href="projects/snake">Змейка</a>
-            <!-- <a href="projects/some-problems/two-sum">two sum</a> -->
-            <a href="projects/test-task-iq">test-task-iq</a>
-        </div>
-        <div class="column" id="right">
-            <p class="heading"></p>
-            <p class="subheading"></p>
-        </div>
+        <div class="links-row"><a href="https://nacretion.github.io/rim-and-ck/">Рим + ЦК</a> <span>\ <a href="https://github.com/Nacretion/snake.git">GIT</a></span></div>
+        <div class="links-row"><a href="https://nacretion.github.io/snake/">Змейка</a> <span>\ <a href="https://github.com/Nacretion/rim-and-ck.git">GIT</a></span></div>
+
 
 
 
@@ -54,22 +48,24 @@
     </div>
 
     <script>
-        $(".menu").hide();
+        let menu = $(".menu")
         let isShown = false;
 
         function changeState() {
             if (!isShown) {
 
 
-                $(".menu").fadeIn();
+                menu.fadeIn();
                 isShown = true;
             }
             else {
-                $(".menu").fadeOut();
+                menu.fadeOut();
                 isShown = false;
             }
 
         }
+
+        menu.hide();
     </script>
 </body>
 
