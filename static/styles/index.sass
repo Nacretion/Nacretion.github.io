@@ -142,3 +142,20 @@ p, h1, h2, h3, h4, h5, h6, span
 
 .uppercase
     text-transform: uppercase
+
+@media screen and (max-width: 768px)
+    .menu
+        .links__wrapper
+            min-width: 90vw
+            padding: 2vh 0
+        .links-row
+            margin-top: 1vh
+            min-width: 40vw
+            height: 2vh
+            display: flex
+            justify-content: space-between
+            font-size: calc(1vh + 1vw)
+            a
+                height: 4vh
+            &:hover
+                color: coral
