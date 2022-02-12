@@ -38,20 +38,26 @@
     </div>
 
     <div class="menu">
-        <div class="links-row"><a href="https://nacretion.github.io/rim-and-ck/">Рим + ЦК</a> <span>\ <a href="https://github.com/Nacretion/rim-and-ck.git">GIT</a></span></div>
-        <div class="links-row"><a href="https://nacretion.github.io/snake/">Змейка</a> <span>\ <a href="https://github.com/Nacretion/snake.git">GIT</a></span></div>
+        <h1>My Projects</h1>
+        <div class="links__wrapper">
+            <div class="links-row"><a href="https://nacretion.github.io/rim-and-ck/">Рим + ЦК</a> <span>\ <a href="https://github.com/Nacretion/rim-and-ck.git">GIT</a></span></div>
+            <div class="links-row"><a href="https://nacretion.github.io/snake/">Змейка</a> <span>\ <a href="https://github.com/Nacretion/snake.git">GIT</a></span></div>
+            <div class="links-row"><a href="https://nacretion.github.io/calculator/">React Calculator</a> <span>\ <a href="https://github.com/Nacretion/calculator.git">GIT</a></span></div>
+        </div>
 
 
 
 
-        <input type="button" onclick="changeState()">
     </div>
 
     <script>
         let menu = $(".menu")
         let isShown = false;
         let mouseOverLinks;
-        $(".links-row").hover(() => mouseOverLinks = true, () => mouseOverLinks = false)
+        $(document).ready(function(){
+            $('a').attr('target', '_blank');
+        });
+        $(".links__wrapper").hover(() => mouseOverLinks = true, () => mouseOverLinks = false)
         menu.click(() => {
             if (!mouseOverLinks) changeState()
         })

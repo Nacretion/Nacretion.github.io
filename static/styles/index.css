@@ -16,6 +16,10 @@ body {
   background: linear-gradient(rgba(255, 255, 255, 0.82), rgba(255, 255, 255, 0.82)), url("../img/Background.png") no-repeat center;
 }
 
+p, h1, h2, h3, h4, h5, h6, span {
+  cursor: default;
+}
+
 .text {
   height: 100vh;
   display: flex;
@@ -94,52 +98,48 @@ body {
   left: 0;
   height: 100vh;
   width: 100vw;
-  background-color: rgba(255, 255, 255, 0.82);
+  background-color: rgba(255, 255, 255, 0.55);
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
+.menu h1 {
+  padding: 1vh 5vh;
+  background-color: rgba(239, 239, 239, 0.76);
+  box-shadow: 0 0 5vw #737373;
+}
+.menu .links__wrapper {
+  display: flex;
+  background-color: rgba(220, 220, 220, 0.87);
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-height: 60vh;
+  max-width: 25vw;
+  padding: 10vh;
+  overflow: auto;
+  box-shadow: 0 0 5vw rgba(190, 190, 190, 0.76);
+}
 .menu .links-row {
-  width: 10vw;
+  width: 20vw;
   height: 5vh;
   display: flex;
   justify-content: space-between;
   font-size: calc(1vh + 1vw);
 }
+.menu .links-row:hover {
+  color: coral;
+}
 .menu a {
   text-align: center;
   font-size: calc(1vh + 1vw);
-  color: #000;
+  color: inherit;
   text-decoration: underline 0.1em rgba(255, 255, 255, 0);
-  transition: text-decoration-color 300ms;
+  transition: color 300ms, text-decoration-color 300ms;
 }
 .menu a:hover {
-  text-decoration-color: black;
-}
-.menu input {
-  transition: 400ms;
-}
-.menu input:hover {
-  transform: rotate(90deg);
-}
-.menu .left {
-  padding-left: 10vw;
-}
-.menu .right {
-  padding-right: 10vw;
-}
-.menu input {
-  position: absolute;
-  cursor: pointer;
-  z-index: 999;
-  top: 5vh;
-  right: 5vw;
-  height: 5vh;
-  width: 5vh;
-  background: none, url("../img/close.png") center;
-  background-size: cover;
-  border: none;
+  text-decoration-color: inherit;
 }
 
 .uppercase {
