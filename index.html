@@ -40,9 +40,22 @@
     <div class="menu">
         <h1>My Projects</h1>
         <div class="links__wrapper">
-            <div class="links-row"><a href="https://nacretion.github.io/rim-and-ck/">Рим + ЦК</a> <span>\ <a href="https://github.com/Nacretion/rim-and-ck.git">GIT</a></span></div>
-            <div class="links-row"><a href="https://nacretion.github.io/snake/">Змейка</a> <span>\ <a href="https://github.com/Nacretion/snake.git">GIT</a></span></div>
-            <div class="links-row"><a href="https://nacretion.github.io/calculator/">React Calculator</a> <span>\ <a href="https://github.com/Nacretion/calculator.git">GIT</a></span></div>
+            <div class="links-row">
+                <a href="https://nacretion.github.io/rim-and-ck/">Рим + ЦК</a>
+                <span>\ <a href="https://github.com/Nacretion/rim-and-ck.git">GIT</a></span>
+            </div>
+            <div class="links-row">
+                <a href="https://nacretion.github.io/snake/">Змейка</a>
+                <span>\ <a href="https://github.com/Nacretion/snake.git">GIT</a></span>
+            </div>
+            <div class="links-row">
+                <a href="https://nacretion.github.io/calculator/">React Calculator</a>
+                <span>\ <a href="https://github.com/Nacretion/calculator.git">GIT</a></span>
+            </div>
+            <div class="links-row">
+                <a href="https://igniiumcomics.com">Igniium comics</a>
+                <span>\ <a class="privateLink" href="#">PRIVATE</a></span>
+            </div>
         </div>
 
 
@@ -56,6 +69,7 @@
         let mouseOverLinks;
         $(document).ready(function(){
             $('a').attr('target', '_blank');
+            $(".privateLink").attr('target', '');
         });
         $(".links__wrapper").hover(() => mouseOverLinks = true, () => mouseOverLinks = false)
         menu.click(() => {
