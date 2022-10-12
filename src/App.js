@@ -15,8 +15,8 @@ import Stack from "./components/Stack";
 import About from "./components/About";
 import Start from "./components/Start";
 
-const phoneSpeed = 200000,
-    speed = 140000
+const phoneSpeed = 2000,
+    speed = 1400
 
 const buttonsArray = [
     {
