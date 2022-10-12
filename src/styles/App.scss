@@ -1,0 +1,301 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.white {
+  color: #fff;
+  text-shadow: #fff;
+}
+
+.magenta {
+  color: #FA2470;
+  text-shadow: #FA2470;
+}
+
+.greenyellow {
+  color: #A5E135;
+  text-shadow: #A5E135;
+}
+
+.App {
+  text-transform: uppercase;
+  width: 100%;
+  height: fit-content;
+  background-color: #000;
+  color: #FFFF00;
+  overflow-x: hidden;
+}
+
+main {
+  min-height: 100vh !important;
+}
+
+nav {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  bottom: 0;
+  left: 0;
+  width: 150px;
+  transition: 500ms;
+}
+
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  width: 100vw;
+  min-height: 80vh;
+  padding: 10vh 10vw;
+}
+
+.flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+}
+
+.grid {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px;
+  grid-template-areas:
+    "subsubheading subsubheading"
+    ". ."
+    "col2 col2"
+    ". ."
+    "col22 col22"
+    ". .";
+
+  font-size: 30px;
+
+  .subsubheading, .subheading {
+    grid-area: subsubheading;
+    font-size: 50px;
+  }
+
+  #col2 {
+    grid-area: col2;
+  }
+
+  #col22 {
+    grid-area: col22;
+  }
+
+}
+
+h1 {
+  font-size: calc(1.5vh + 1.5vw);
+}
+
+
+.pulseText {
+  animation: pulseText 3s linear infinite;
+}
+
+.heading {
+  font-size: calc(3.5vh + 3.5vw);
+  display: flex;
+}
+
+.subheading {
+  font-size: calc(2.5vh + 2.5vw);
+  display: flex;
+}
+
+.subsubheading {
+  font-size: calc(1.5vh + 1.5vw);
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #ff0;
+  gap: 10px;
+  transition: 500ms;
+
+  &:hover {
+    text-shadow: rgba(250, 36, 112, 0.5) 10px 10px 10px;
+  }
+
+  cursor: pointer;
+}
+
+.sizeAnim {
+  animation: sizeAnim 2s linear infinite;
+}
+
+p {
+  gap: 10px
+}
+
+.img300 {
+  width: 20%;
+}
+
+.img400 {
+  width: 30%;
+}
+
+.img700 {
+  width: 100%;
+}
+
+@keyframes pulseText {
+  from {
+    opacity: 1;
+  }
+  50% {
+    text-shadow: rgba(255, 255, 0, 0.5) 5px 0 20px;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes sizeAnim {
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.15);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    min-height: 100vh;
+  }
+
+
+  .img400, .img300 {
+    width: 60% !important;
+  }
+  .img700 {
+    width: 600px;
+  }
+  .flex, .container, .flexRow {
+    flex-direction: column;
+  }
+  .revert {
+    flex-direction: column-reverse;
+  }
+
+  .grid {
+    .subsubheading {
+      font-size: 50px;
+    }
+
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .container {
+    padding: 0;
+  }
+  .heading {
+    font-size: 50px;
+  }
+  .subheading {
+    font-size: 30px;
+  }
+  .subsubheading {
+    font-size: 20px;
+  }
+
+  #about {
+    .heading {
+      font-size: 55px;
+
+      .greenyellow + span {
+        margin-left: 10px;
+      }
+    }
+  }
+  .grid {
+    font-size: 20px;
+  }
+
+  .img300, .img400, .img700 {
+    width: 100%;
+  }
+  .heading, .subheading, .subsubheading, h1 {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+  }
+  #start {
+    .heading {
+      gap: 0;
+    }
+
+    .subheading {
+      margin-top: 10px;
+      flex-direction: column;
+      font-size: 40px;
+      gap: 0;
+    }
+  }
+
+  #about {
+    .heading {
+      font-size: 55px;
+
+      .greenyellow + span {
+        margin-left: 10px;
+      }
+    }
+
+    .heading, .subsubheading {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    p + p, p + h1 {
+      margin-top: 10px;
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 25px;
+    gap: 0;
+
+    .subsubheading {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  }
+
+  nav {
+    flex-direction: row;
+    overflow-x: auto;
+    width: 100%;
+    padding: 0 5vw;
+    right: 0;
+    gap: 10px;
+  }
+  #contacts {
+    user-select: none;
+  }
+}

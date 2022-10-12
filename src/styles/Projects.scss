@@ -1,0 +1,89 @@
+.project {
+  h1 {
+    font-size: calc(1vh + 1vw);
+  }
+
+  .flexRow {
+    justify-content: space-between;
+  }
+
+  a + .flexRow {
+    margin-top: 40px;
+  }
+}
+.slider {
+  height: 80vh;
+  width: 100%;
+}
+
+.slideContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding: 20px;
+  gap: 50px;
+  background-color: rgba(#000, .4);
+
+  a, h1 {
+    height: fit-content;
+    text-align: center
+  }
+  a {
+    width: fit-content;
+  }
+  h1 {
+    width: 50%;
+  }
+}
+.slide {
+  height: 80vh;
+}
+
+#ckSlide {
+  background: linear-gradient(rgba(black, 0.6), rgba(black, 0.6)), url('../img/ck.png') no-repeat center;
+  background-size: auto 100%;
+}
+#ikSlide {
+  background: linear-gradient(rgba(black, 0.6), rgba(black, 0.6)), url('../img/ik.png') no-repeat center;
+  background-size: auto 100%;
+}
+#calcSlide {
+  background: linear-gradient(rgba(black, 0.4), rgba(black, 0.4)), url('../img/calc.png') no-repeat center;
+  background-size: auto 100%;
+}
+#dacotaSlide {
+  background: linear-gradient(rgba(black, 0.4), rgba(black, 0.4)), url('../img/dacota.jpg') no-repeat center;
+  background-size: auto 100%;
+}
+
+@media screen and (max-width: 1024px) {
+  .project {
+    justify-content: center;
+
+    a + .flexRow {
+      margin-top: 10px;
+    }
+    .slider {
+      height: 40vh;
+    }
+    div {
+      h1 {
+        width: 80%;
+        font-size: 15px;
+      }
+    }
+
+    .subsubheading {
+      font-size: calc(1.5vh + 1.5vw);
+    }
+
+    h1 {
+      max-width: 100%;
+    }
+
+    img {
+      width: 300px;
+    }
+  }
+}
