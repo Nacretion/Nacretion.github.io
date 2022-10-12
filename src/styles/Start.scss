@@ -1,0 +1,14 @@
+@media screen and (max-width: 800px) {
+  #start {
+    .heading {
+      gap: 0;
+    }
+
+    .subheading {
+      margin-top: 10px;
+      flex-direction: column;
+      font-size: 40px;
+      gap: 0;
+    }
+  }
+}

@@ -15,7 +15,7 @@ const Contacts = ({copyText}) => {
                     <span className={"magenta"}>Теле</span>
                     <span className={"greenyellow"}>грамм</span>
                 </a>
-                <p  className={"copyText"} id={"col2"} onClick={() => {
+                <p className={"copyText"} id={"col2"} onClick={() => {
                     copyText("+79088554760")
                 }}>
                     <span className={"magenta"}>What</span>

@@ -1,17 +1,38 @@
-@font-face {
-  font-family: "Junegull";
-  src: url("../fonts/junegull-rg.ttf") format("truetype");
+:root {
+    --main-info: #FA2470;
+    --simple-info: #A5E135;
 }
+
+@font-face {
+    font-family: "Junegull";
+    src: url("../fonts/junegull-rg.ttf") format("truetype");
+}
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Junegull",
+    padding: 0;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Junegull",
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.white {
+    color: #fff;
+    text-shadow: #fff;
+}
+
+.magenta {
+    color: var(--main-info);
+    text-shadow: var(--main-info);
+}
+
+.greenyellow {
+    color: var(--simple-info);
+    text-shadow: var(--simple-info);
 }

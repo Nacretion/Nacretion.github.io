@@ -44,15 +44,17 @@ svg {
     box-shadow: 5px 0 0 #FA2470;
 
 }
+
 .buttonActive:hover {
     box-shadow: 5px 5px 0 #FA2470;
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width: 800px) {
     .button {
         min-width: 170px;
         transform: skewX(-15deg);
     }
+
     .buttonActive {
         box-shadow: 5px 5px 0 #FA2470;
     }
