@@ -124,7 +124,7 @@ function App() {
     }
 
 
-    const setActiveButton = () => {
+    function setActiveButton() {
         let clearedButtons = clearActiveButton(),
             arrayOffsets = getArrayOfOffsets("container"),
             activeContainer = getActiveContainerIndex(arrayOffsets),
@@ -152,7 +152,7 @@ function App() {
                 activeButton.offsetLeft - (activeButton.clientWidth) / 2 : nav.scrollLeft
 
         })
-    }, [])
+    })
 
 
     return (

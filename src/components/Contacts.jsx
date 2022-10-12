@@ -7,32 +7,32 @@ const Contacts = ({copyText}) => {
                 <p className={"subheading pulseText"}>
                     <span>Контакты</span>
                 </p>
-                <a target={"_blank"} href="https://vk.com/nacretion">
+                <a target={"_blank"} rel="noreferrer" href="https://vk.com/nacretion">
                     <span className={"magenta"}>В</span>
                     <span className={"greenyellow"}>Контакте</span>
                 </a>
-                <a target={"_blank"} href="https://t.me/nacretion">
+                <a target={"_blank"} rel="noreferrer" href="https://t.me/nacretion">
                     <span className={"magenta"}>Теле</span>
                     <span className={"greenyellow"}>грамм</span>
                 </a>
-                <a id={"col2"} onClick={() => {
+                <p  className={"copyText"} id={"col2"} onClick={() => {
                     copyText("+79088554760")
                 }}>
                     <span className={"magenta"}>What</span>
                     <span className={"pulseText"}>'</span>
                     <span className={"magenta"}>s</span>
                     <span className={"greenyellow"}>Up</span>
-                </a>
-                <a onClick={() => {
+                </p>
+                <p className={"copyText"} onClick={() => {
                     copyText("+79088554760")
                 }}>
                     <span className={"magenta"}>Viber</span>
-                </a>
-                <a onClick={() => {
+                </p>
+                <p className={"copyText"} onClick={() => {
                     copyText("+79088554760")
                 }}>
                     <span className={"magenta"}>Мобильный</span>
-                </a>
+                </p>
                 <a href="mailto:ananjev.nikita2017@yandex.ru" id={"col22"}>
                     <span className={"greenyellow"}>Почта</span>
                 </a>
